@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="popup.js"></script>
+    <script src="randomfacts.js"></script>
+    <script src="pdf-lib.min.js"></script>
+    <header>
+      <h1>Pesu Slides Extractor</h1>
+    </header>
+    <div
+      class="loader"
+      id="mainLoader"
+      style="display: block; align-self: center"
+    ></div>
+    <div id="buttonLoader">
+      <section class="buttonSection">
+        <button id="mergeButton" disabled="true">Merge All</button>
+        <button id="downloadButton" disabled="true">Download All</button>
+      </section>
+      <div class="loader" id="loader"></div>
+      <div id="randomFact"></div>
+    </div>
+    <table>
+      <tr>
+        <th style="width: 25px">Sl no:</th>
+        <th>Slides Link</th>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "PESU slides downloader",
+  "description": "This is an extension that can be used to download all the slides of a perticular unit of a subject in pesu website. It also helps in merging the slides into one.",
+  "version": "1.0.1",
+  "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon":"logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.pesuacademy.com/Academy/s/studentProfilePESU"],
+      "js": ["content.js"]
+    }
+  ]
+}
